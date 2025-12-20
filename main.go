@@ -3,7 +3,8 @@ package main
 import "calculator/introduction"
 
 func main() {
-	introduction.Conduction1()
-	introduction.Conduction2()
-	introduction.Conduction3()
+	introduction.Conduction()
+	//introduction.Conduction2()
+	//introduction.Conduction3()
+
 }
