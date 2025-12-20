@@ -6,5 +6,5 @@ func main() {
 	//var name string
 	//fmt.Print("Ведитн ваше имя ")
 	//fmt.Scan(&name)
-	introduction.Gaga()
+	introduction.Conduction()
 }
