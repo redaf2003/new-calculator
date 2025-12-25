@@ -1,10 +1,8 @@
 package main
 
-import "calculator/introduction"
+import introduction "calculator/introductions"
 
 func main() {
-	introduction.Conduction()
-	//introduction.Conduction2()
-	//introduction.Conduction3()
+	introduction.RunCalculator()
 
 }
