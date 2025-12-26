@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	pointers.Pointers()
+	pointers.Numbersss()
 	introduction.RunCalculator()
 
 }
