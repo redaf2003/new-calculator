@@ -16,6 +16,7 @@ func MessageGay(message *string) {
 }
 
 func Numbersss() {
+	fmt.Println("Указатели:")
 	number := 5
 	p := &number
 	fmt.Println(number)
@@ -23,4 +24,5 @@ func Numbersss() {
 
 	*p = 10
 	fmt.Println(number)
+	fmt.Println("______________________")
 }
