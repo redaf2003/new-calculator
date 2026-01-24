@@ -1,81 +1,70 @@
-package variables //-переменные
+package main
 
-import (
-	"fmt"
+import "fmt"
+
+// Глобальные переменные (объявлены вне функции main)
+var (
+	number1  int     = 10
+	text1    string  = "hello"
+	float1   float64 = 1.1
+	boolean1 bool    = true
 )
 
-func TheFlyingBird() {
-	text := "Проигрыш" // Объявляем переменную text и инициализируем строкой "Проигрыш"
+func Peremenie() {
+	// Вывод глобальных переменных
+	fmt.Println("number1:", number1)
+	fmt.Println("text1:", text1)
+	fmt.Println("float1:", float1)
+	fmt.Println("boolean1:", boolean1)
 
-	text = "Победа"        // Полностью перезаписываем значение переменной на "Победа"
-	text += "!!!"          // Добавляем в конец строки "!!!" → "Победа!!!"
-	text += " Ураааааа..." // Добавляем ещё одну строку в конец → "Победа!!! Ураааааа..."
+	// Локальные переменные (объявлены внутри функции main)
+	var number2 int = 20
+	var text2 string = "world"
+	var float2 float64 = 2.2
+	var boolean2 bool = false
 
-	score := 0 // Объявляем переменную score и инициализируем её значением 0
+	fmt.Println("number2:", number2)
+	fmt.Println("text2:", text2)
+	fmt.Println("float2:", float2)
+	fmt.Println("boolean2:", boolean2)
 
-	score = 50 // Присваиваем переменной score значение 50 (перезаписываем предыдущее значение)
-	// score = score + 25  // Закомментированная строка: увеличиваем score на 25
-	score += 25 // Сокращенная запись: увеличиваем score на 25 (эквивалентно score = score + 25)
-	score -= 10 // Уменьшаем score на 10 (эквивалентно score = score - 10)
-	score *= 2  // Умножаем score на 2 (эквивалентно score = score * 2)
-	score /= 5  // Делим score на 5 (эквивалентно score = score / 5)
-	score %= 6  // Находим остаток от деления score на 6 (эквивалентно score = score % 6)
-	score++     // Увеличиваем score на 1 (инкремент)
-	score--     // Уменьшаем score на 1 (декремент)
+	// Дополнительные примеры для лучшего понимания
+	fmt.Println("\n--- Дополнительные примеры ---")
 
-	fmt.Println(score)
-	fmt.Println(text)
+	// Краткое объявление переменных (только внутри функций)
+	number3 := 30
+	text3 := "golang"
+	float3 := 3.3
+	boolean3 := true
 
-	//package main
+	fmt.Println("number3:", number3)
+	fmt.Println("text3:", text3)
+	fmt.Println("float3:", float3)
+	fmt.Println("boolean3:", boolean3)
 
-	//import "fmt"
+	// Арифметические операции
+	sum := number1 + number2 + number3
+	fmt.Printf("\nСумма всех чисел: %d + %d + %d = %d\n", number1, number2, number3, sum)
 
-	//func main() {
+	// Конкатенация строк
+	greeting := text1 + " " + text2 + " " + text3
+	fmt.Println("Объединённая строка:", greeting)
 
-	// ===== ПЕРЕМЕННЫЕ =====
+	// Логические операции
+	boolResult := boolean1 && boolean2 || boolean3
+	fmt.Printf("Результат логического выражения (boolean1 && boolean2 || boolean3): %v\n", boolResult)
 
-	//age := 20
-	// age — переменная
-	// 20 — значение (возраст)
+	// Вывод типов переменных (используем пакет reflect)
+	fmt.Println("\n--- Типы переменных ---")
+	fmt.Printf("number1: %T\n", number1)
+	fmt.Printf("text1: %T\n", text1)
+	fmt.Printf("float1: %T\n", float1)
+	fmt.Printf("boolean1: %T\n", boolean1)
 
-	//name := "Аня"
-	// name хранит текст (строку)
-
-	//isStudent := true
-	// isStudent хранит true или false (да / нет)
-
-	// ===== ИСПОЛЬЗОВАНИЕ ПЕРЕМЕННЫХ =====
-
-	//fmt.Println("Имя:", name)
-	//fmt.Println("Возраст:", age)
-	//fmt.Println("Студент:", isStudent)
-
-	// ===== ИЗМЕНЕНИЕ ПЕРЕМЕННЫХ =====
-
-	// age = age + 1
-	// увеличиваем возраст на 1
-
-	//fmt.Println("Новый возраст:", age)
-
-	// ===== ЧИСЛА И ВЫЧИСЛЕНИЯ =====
-
-	//a := 5
-	//b := 3
-
-	//sum := a + b
-	// sum хранит результат сложения
-
-	//fmt.Println("Сумма:", sum)
-
-	// ===== ЗНАЧЕНИЯ ПО УМОЛЧАНИЮ =====
-
-	//var x int
-	// x объявлена, но значение не задано
-	// по умолчанию x = 0
-
-	//fmt.Println("Значение x:", x)
-
-	// ===== КОНЕЦ ПРОГРАММЫ =====
-	//}
-
+	// Константы
+	const pi = 3.14159
+	const appName = "Go Learning App"
+	fmt.Println("\n--- Константы ---")
+	fmt.Println("Число Пи:", pi)
+	fmt.Println("Название приложения:", appName)
 }

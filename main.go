@@ -8,11 +8,9 @@ import (
 )
 
 func main() {
-	variables.TheFlyingBird()
+	variables.Peremenie()
 	slaic.Slice()
 	slaic.FuxMake()
 	pointers.Numbersss()
 	introduction.RunCalculator()
-	//variables.TheFlyingBird()
-
 }
