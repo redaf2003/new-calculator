@@ -1,16 +1,16 @@
 package main
 
-import (
-	introduction "calculator/introductions"
-	"calculator/pointers"
-	"calculator/slaic"
-	"calculator/variables"
-)
+import conditionalbranches "calculator/Conditionalbranches"
+
+//introduction "calculator/introductions"
 
 func main() {
-	variables.Peremenie()
-	slaic.Slice()
-	slaic.FuxMake()
-	pointers.Numbersss()
-	introduction.RunCalculator()
+	//conditionalbranches.ExampleIfElseIf(40)
+	//conditionalbranches.OperatorIf()
+	//variables.Peremenies()
+	//slaic.Slice()
+	//slaic.FuxMake()
+	//pointers.Numbersss()
+	//introduction.RunCalculator()
+	conditionalbranches.Proverka5()
 }

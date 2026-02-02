@@ -10,7 +10,7 @@ var (
 	boolean1 bool    = true
 )
 
-func Peremenie() {
+func Peremenies() {
 	// Вывод глобальных переменных
 	fmt.Println("number1:", number1)
 	fmt.Println("text1:", text1)
